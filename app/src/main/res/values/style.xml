@@ -1,0 +1,144 @@
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Base application theme -->
+
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/your_status_bar_color</item>
+        <item name="colorPrimary">@color/your_status_bar_color</item>   <!-- color for action bars-->
+    </style>
+
+    <style name="TextInputLayoutNoBorder" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorIconTint">@null</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxBackgroundMode">none</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="foxbiro">
+        <item name="cornerFamily">
+            rounded
+        </item>
+        <item name="cornerSize">
+            50%
+        </item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="android:windowElevation">24dp</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:background">@drawable/rounded_dialog_background</item>
+    </style>
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!-- Customize your title text appearance here -->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item> <!-- Black color -->
+        <item name="android:fontFamily">@font/calibri</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BlackSpinnerStyle" parent="android:Widget.Spinner">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+<!--    <style name="CustomSwitchStyle" parent="Widget.MaterialComponents.CompoundButton.Switch">-->
+<!--        <item name="track">@drawable/switch_track_3d</item>-->
+<!--        <item name="android:thumb">@drawable/switch_thumb_3d</item>-->
+<!--        <item name="colorControlActivated">@color/yellow_accent</item>-->
+<!--        <item name="colorSwitchThumbNormal">@color/white</item>-->
+<!--        <item name="android:colorForeground">@color/dark_gray</item>-->
+<!--    </style>-->
+
+<!--    <style name="CustomSwitchStyle" parent="Widget.MaterialComponents.CompoundButton.Switch">-->
+<!--        <item name="colorControlActivated">#FFEB3B</item>-->
+<!--    </style>-->
+
+<!--    <style name="CustomSwitchStyle" parent="Widget.MaterialComponents.CompoundButton.Switch">-->
+<!--        <item name="colorControlActivated">#FFEB3B</item>-->
+<!--        <item name="colorSwitchThumbNormal">#FFEB3B</item>-->
+<!--        <item name="android:colorForeground">#2C2C2C</item>-->
+<!--    </style>-->
+
+<!--    <style name="CustomSwitchStyle" parent="Widget.MaterialComponents.CompoundButton.Switch">-->
+<!--        <item name="colorControlActivated">#FFEB3B</item>-->
+<!--        <item name="colorSwitchThumbNormal">#FFEB3B</item>-->
+<!--        <item name="android:colorForeground">#2C2C2C</item>-->
+<!--        <item name="trackTint">#2C2C2C</item>-->
+<!--    </style>-->
+
+<!--    <style name="CustomSwitchStyle" parent="Widget.MaterialComponents.CompoundButton.Switch">-->
+<!--        <item name="colorControlActivated">#FFEB3B</item>-->
+<!--        <item name="colorSwitchThumbNormal">#2C2C2C</item>-->
+<!--    </style>-->
+    <style name="CustomSwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:track">@drawable/neumorph_switch_track</item>
+        <item name="android:thumb">@drawable/neumorph_switch_thumb</item>
+    </style>
+
+    <style name="CustomRectangularButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+    </style>
+
+    <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/custom_search_icon</item>
+        <item name="closeIcon">@drawable/custom_close_icon</item>
+        <item name="android:textColorHint">@color/expBlue</item>
+        <item name="android:textColor">@color/expBlue</item>
+        <item name="android:textCursorDrawable">@drawable/custom_cursor</item>
+        <item name="queryHint">Search...</item>
+        <item name="searchHintIcon">@drawable/custom_search_hint_icon</item>
+    </style>
+
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+
+        <item name="chipMinHeight">40dp</item>
+        <item name="chipCornerRadius">8dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="chipIconSize">0dp</item>
+        <item name="chipIcon">@null</item>
+        <item name="checkedIcon">@null</item>
+        <item name="chipStartPadding">8dp</item>
+        <item name="chipEndPadding">0dp</item>
+
+        <item name="android:textAppearance">@style/CustomChipTextAppearance</item>
+    </style>
+
+    <style name="CustomChipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="CustomToolbarTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
+</resources>

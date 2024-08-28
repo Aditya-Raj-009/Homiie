@@ -1,0 +1,69 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu_owner"
+    app:startDestination="@id/addFragment">
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.avi.gharkhojo.Fragments.OwnerFragments.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/action_addFragment_to_propertyDetailsFragment"
+            app:destination="@id/propertyDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/interestedFragment"
+        android:name="com.avi.gharkhojo.Fragments.OwnerFragments.InterestedFragment"
+        android:label="fragment_interest"
+        tools:layout="@layout/fragment_interest" />
+
+    <fragment
+        android:id="@+id/uploadsFragment"
+        android:name="com.avi.gharkhojo.Fragments.OwnerFragments.UploadsFragment"
+        android:label="fragment_uploads"
+        tools:layout="@layout/fragment_uploads">
+        <action
+            android:id="@+id/action_uploadsFragment_to_ownerDetailFragment"
+            app:destination="@id/ownerDetailFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/ownerProfileFragment"
+        android:name="com.avi.gharkhojo.Fragments.OwnerFragments.OwnerProfileFragment"
+        android:label="fragment_owner_profile"
+        tools:layout="@layout/fragment_owner_profile" />
+
+    <fragment
+        android:id="@+id/propertyDetailsFragment"
+        android:name="com.avi.gharkhojo.Fragments.OwnerFragments.PropertyDetailsFragment"
+        android:label="fragment_property_details"
+        tools:layout="@layout/fragment_property_details">
+        <!-- Add the action to navigate to RentAndLocationFragment -->
+        <action
+            android:id="@+id/action_propertyDetailsFragment_to_rentAndLocationFragment"
+            app:destination="@id/rentAndLocationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rentAndLocationFragment"
+        android:name="com.avi.gharkhojo.Fragments.OwnerFragments.RentAndLocationFragment"
+        android:label="RentAndLocationFragment">
+        <action
+            android:id="@+id/action_rentAndLocationFragment_to_roomPhotosFragment"
+            app:destination="@id/roomPhotosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomPhotosFragment"
+        android:name="com.avi.gharkhojo.Fragments.OwnerFragments.RoomPhotosFragment"
+        android:label="fragment_room_photos"
+        tools:layout="@layout/fragment_room_photos" />
+    <fragment
+        android:id="@+id/ownerDetailFragment"
+        android:name="com.avi.gharkhojo.Fragments.OwnerFragments.OwnerDetailFragment"
+        android:label="fragment_owner_detail"
+        tools:layout="@layout/fragment_owner_detail" />
+</navigation>

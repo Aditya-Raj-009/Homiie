@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.avi.gharkhojo.Fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home2_to_homeDetails"
+            app:destination="@id/homeDetails" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/search"
+        android:name="com.avi.gharkhojo.Fragments.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.avi.gharkhojo.Fragments.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/homeDetails"
+        android:name="com.avi.gharkhojo.Fragments.HomeDetails"
+        android:label="fragment_home_details"
+        tools:layout="@layout/fragment_home_details">
+        <argument
+            android:name="selectedGridItem"
+            app:argType="com.avi.gharkhojo.Model.GridItem" />
+        <action
+            android:id="@+id/action_homeDetails_to_tabLayoutFragment"
+            app:destination="@id/tabLayoutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tabLayoutFragment"
+        android:name="com.avi.gharkhojo.Fragments.TabLayoutFragment"
+        android:label="fragment_tab_layout"
+        tools:layout="@layout/fragment_tab_layout" />
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.avi.gharkhojo.Fragments.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" >
+        <action
+            android:id="@+id/action_bookmarkFragment_to_homeDetails"
+            app:destination="@id/homeDetails" />
+    </fragment>
+
+
+</navigation>
