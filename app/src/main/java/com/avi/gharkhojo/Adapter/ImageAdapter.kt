@@ -1,9 +1,4 @@
 package com.avi.gharkhojo.Adapter
-
-
-
-
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -57,7 +52,7 @@ class ImageAdapter : ListAdapter<ImageItem, RecyclerView.ViewHolder>(ImageDiffCa
     class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val imageView: ImageView = itemView.findViewById(R.id.image)
 
-        fun bind(imageRes: Int) {
+        fun bind(imageRes: String) {
             Glide.with(itemView.context).load(imageRes).into(imageView)
         }
     }
